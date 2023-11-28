@@ -1,0 +1,68 @@
+/* FILEPATH: /c:/Users/ASUS/Documents/Universidad/06_SemestrePrecencial/04_ProgramaciónIntegrativaComponentesWeb/UNIDAD_1/Semana 2/Clase 3/example-gallery-component/gallery-component.css */
+
+/* Estilos para la imagen principal */
+.main-image-container {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Añadido: Sombra a la imagen principal */
+}
+
+.main-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent; /* Añadido: Fondo transparente */
+    border: none;
+    color: #fff; /* Añadido: Texto blanco */
+    font-size: 1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.1) inset; /* Añadido: Sombra y brillo */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Añadido: Transición suave en el cambio de color de fondo y sombra */
+    border-radius: 10px; /* Añadido: Borde redondeado */
+    background-image: linear-gradient(to right, #4CAF50 0%, #4CAF50 50%, #FF0000 50%, #FF0000 100%); /* Añadido: Degradado mitad verde y mitad rojo */
+    background-size: 200% 100%; /* Añadido: Ajuste del tamaño del degradado */
+}
+
+.prev-button {
+    left: 0;
+}
+
+.next-button {
+    right: 0;
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background-position: right; /* Añadido: Desplazamiento del degradado al hacer hover */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4), 0 0 15px rgba(0, 0, 0, 0.2) inset; /* Añadido: Sombra y brillo al hacer hover */
+}
+
+/* Estilos para las miniaturas */
+.thumbnails-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.thumbnails-container img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.thumbnails-container img:hover {
+    border: 2px solid #4CAF50; /* Añadido: Borde verde oscuro al hacer hover */
+}
