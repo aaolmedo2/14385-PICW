@@ -1,0 +1,48 @@
+/* Estilos CSS aquí */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    background: rgb(172, 158, 96);
+    background: -moz-radial-gradient(circle, rgba(172, 158, 96, 1) 0%, rgba(180, 179, 179, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(172, 158, 96, 1) 0%, rgba(180, 179, 179, 1) 100%);
+    background: radial-gradient(circle, rgba(172, 158, 96, 1) 0%, rgba(180, 179, 179, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ac9e60", endColorstr="#b4b3b3", GradientType=1);
+}
+
+h1 {
+    font-family: "Arial Black", sans-serif;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    background: white;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card strong {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+.card p {
+    margin: 0;
+}
+
+#userData {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
