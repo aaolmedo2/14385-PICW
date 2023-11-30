@@ -3,7 +3,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Establecer la altura al 100% de la ventana de visualización */
-  background: linear-gradient(to bottom right, #FFD700, #FFA500); /* Degradado de colores cálidos */
+  height: 100vh;
+  text-align: center;
+  font-family: Arial, sans-serif;
 }
-
