@@ -1,0 +1,30 @@
+<!doctype html> 
+<html>
+   <head> 
+      <meta charset="utf-8">
+      <title>WebAssembly Reverse Number</title>
+      <style>
+         div { 
+            font-size : 30px; text-align : center; color:orange; 
+         } 
+      </style>
+   </head>
+   <body>
+      <div id="textcontent"></div>
+      <script> 
+         let reverse; 
+         fetch("reverse.wasm")  
+            .then(bytes => bytes.arrayBuffer()) 
+            .then(mod => WebAssembly.compile(mod)) 
+            .then(module => {return new WebAssembly.Instance(module) })
+            .then(instance => { 
+            
+            console.log(instance); 
+            reverse = instance.exports._Z13reversenumberi(1439898); 
+            console.log("The reverse of 1439898 = " +reverse); 
+            document.getElementById("textcontent")
+               .innerHTML = "The reverse of 1439898 = " +reverse; 
+         }); 
+      </script>
+   </body>
+</html>
